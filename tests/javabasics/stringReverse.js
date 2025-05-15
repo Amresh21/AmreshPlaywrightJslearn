@@ -1,6 +1,6 @@
 // Given str  = "I am new to Playwright with Javascript"
 
-// 1 Function - It wiclearll complete string and will do reverse completely
+// 1 Function - It will complete string and will do reverse completely
     let str1  = "I am new to Playwright with Javascript";
 
 function strCharReverse(s1)
