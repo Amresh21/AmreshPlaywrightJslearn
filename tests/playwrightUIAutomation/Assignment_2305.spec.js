@@ -33,7 +33,6 @@ test("Add a new user from user Management", async ({page})=>{
     await page.waitForSelector('div[role="listbox"]', { state: 'visible' });
     await page.waitForSelector('//div[@role="option"]//span[text()="Enabled"]', { timeout: 5000 });
     await page.click('//div[@role="option"]//span[text()="Enabled"]');
-    await page.locator("//input[@class='oxd-input oxd-input--focus']");
     await page.locator("(//label[text()='Username']/following::input)[1]").fill(name);
     await page.locator("(//input[@type='password'])[1]").fill('Secret123');
     await page.locator("(//input[@type='password'])[2]").fill('Secret123');
@@ -41,7 +40,7 @@ test("Add a new user from user Management", async ({page})=>{
     await page.getByRole('button',{name:'Save'}).click();
     await page.waitForTimeout(2000);
     const toastMessage = page.locator('//p[text()="Successfully Saved"]');
-    await toastMessage.waitFor({ state: 'visible', timeout: 5000 });
+    await toastMessage.waitFor({ state: 'visible', timeout: 3000 });
     expect(toastMessage).toHaveText('Successfully Saved');
     await page.screenshot({path:`./screenshots/fullpageScreenshot${Date.now()}.png`,fullPage:true});
 
