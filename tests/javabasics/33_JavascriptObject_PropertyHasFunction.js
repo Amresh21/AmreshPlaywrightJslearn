@@ -1,7 +1,7 @@
 //Object -> It is a collection of properties
 let person ={
 firstName: 'Amresh', 
-lastName: 'chakkrapani',
+lastName: 'Chakkrapani',
 country: 'India',
 
 fullName:function()

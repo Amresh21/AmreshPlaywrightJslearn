@@ -1,15 +1,15 @@
 //Object -> It is a collection of properties
 let person ={
-firstName: 'Vikas', 
-lastName: 'B', 
+firstName: 'Amresh', 
+lastName: 'Chakkarapani', 
 country: 'India'
 }
 console.log("person.firstName: "+person.firstName) 
 console.log("person.lastName: "+person.lastName) 
 console.log("person.country: "+person.country)
 
-person.firstName='Sandeep'
-person.lastName='B'
+person.firstName='Aravind'
+person.lastName='Chakkarapani'
 person.country='India'
 
 console.log("person.firstName: "+person.firstName) 
