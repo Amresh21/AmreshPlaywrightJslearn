@@ -50,3 +50,4 @@ test('RadioButton Validation', async({page})=>{
     console.log('Validate -- ', isCheckedFemale);
 
 })
+
