@@ -23,7 +23,9 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : 1,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter: "allure-playwright",
+  //allure generate ./allure-results -o ./allure-report
+  //allure open ./allure-report
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     // if word = qa the use qaurl if word = stage then use stageurl if word = prod then use the prod url
