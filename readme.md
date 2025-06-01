@@ -170,3 +170,31 @@ Assignment -
 1. Try to use - Record at cursor
 2. Try to use - Pick locator to identify the element 
 You should 2 test cases 
+
+
+Assignment -
+Install Playwright Allure Report -
+
+https://www.npmjs.com/package/allure-playwright
+Step 1 - Run the command in terminal - npm install -D allure-playwright
+
+Step 2 - update the playwright.config.js or run via CLI
+
+Add allure-playwright as the reporter in the Playwright configuration file:
+
+import { defineConfig } from '@playwright/test';
+
+export default defineConfig({ reporter: "allure-playwright", }); Or, if you want to use more than one reporter:
+
+import { defineConfig } from '@playwright/test';
+
+export default defineConfig({ reporter: [["line"], ["allure-playwright"]], }); Or pass the same values via the command line:
+
+npx playwright test --reporter=line,allure-playwright
+
+Step 3 -
+
+Run below 2 command to generate and open the Allure Report -
+
+allure generate ./allure-results -o ./allure-report 
+allure open ./allure-report
