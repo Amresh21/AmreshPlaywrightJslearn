@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('Validating Different Locator for Testing', async({page})=>{
+test('@regression Validating Different Locator for Testing', async({page})=>{
 
     await page.goto('https://bookcart.azurewebsites.net/');
 
