@@ -1,5 +1,5 @@
 import { test, expect } from "@playwright/test";
-import * as XLSX from 'xlsx'
+import * as XLSX from 'xlsx';
 import path from 'path';
 import fs from 'fs'
 
