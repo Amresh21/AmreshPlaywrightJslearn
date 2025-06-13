@@ -1,5 +1,4 @@
 import { test, expect } from '@playwright/test';
-import { table } from 'console';
 
 test('Handle Web Tables Using Playwright', async({page})=>{
 
@@ -91,5 +90,4 @@ test('Handle Web Tables Using Playwright with Reusable Function', async({page})=
         }
     }
 
-
-})
+});
