@@ -74,4 +74,6 @@ test('Register 10 users and update Excel with result', async ({ page }) => {
   }
 
   writeExcelData(users);
+  page.close();
 });
+
