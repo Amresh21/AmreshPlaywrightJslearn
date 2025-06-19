@@ -13,7 +13,7 @@ test('@regression @smoke should load home page of application and search playwri
     await expect(page).toHaveTitle('Google');
 })
 
-test('@smoke should load home page of application and search playwright', async({page},testInfo) =>{
+test('@regression should load home page of application and search playwright', async({page},testInfo) =>{
 
     testInfo.annotations.push({type:'TagValue','description':'Smoke TestCases'});
     console.log('Project Info Value -', testInfo.project.name);

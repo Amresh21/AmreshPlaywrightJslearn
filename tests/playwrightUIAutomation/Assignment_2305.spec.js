@@ -2,9 +2,7 @@ import { test, expect } from '@playwright/test';
 
 let name = `Amresh${Date.now()}`;
 
-test.beforeEach("Login Into the System", {
-    tag: '@smoke',
-  },async ({page})=>{
+test.beforeEach("@smoke Login Into the System",async ({page})=>{
 
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
     await page.locator("input[placeholder='Username']").fill('Admin');
@@ -17,9 +15,7 @@ test.beforeEach("Login Into the System", {
 })
 
 
-test("Add a new user from user Management",{
-    tag: '@smoke',
-  }, async ({page})=>{
+test("@smoke Add a new user from user Management",async ({page})=>{
 
     await page.locator("//span[text()='Admin']").click();
     await page.locator("//button[normalize-space()='Add']").click();
@@ -52,9 +48,7 @@ test("Add a new user from user Management",{
 
 
 
-test('Delete the user from user management',{
-    tag: '@smoke',
-  }, async ({ page }) => {
+test('@smoke Delete the user from user management',async ({ page }) => {
     await page.locator("//span[text()='Admin']").click();
     const dynamicXPath = `(//div[text()='${name}']/preceding::i[contains(@class,'oxd-icon bi-check')])[1]`;
     await page.locator(dynamicXPath).click(); 
