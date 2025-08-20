@@ -23,7 +23,7 @@ do{
     console.log("Do while loop :" + j);
     j++;
 
-}while(j<5)
+}while(j<8)
 
 // for each loop
 

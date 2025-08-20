@@ -15,7 +15,7 @@ function isPalindrome(s)
     return "Palindrome"
 }
 
-let str1 = "abcdcba";
+let str1 = "abcdecba";
 let str2 = "abcdefgh";
 
 console.log("Str1 is "+isPalindrome(str1));
